@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'images/home.png' %}">
+ 
+    
+    <style>
+        img{
+            width: 400px;
+            height: 300px;
+        }
+        h1:hover{
+            
+            color: white;
+            background-color: red;
+            text-align: center;
+            font-size: 40px;
+            
+        }
+        
+    </style>
+</head>
+
+<a class="btn btn-primary" href="{% url 'about' %}">About</a>
+<a  class="btn btn-outline-dark" href="{% url 'form' %}">Form</a>
+<body>
+<h1>Homepage</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque fuga maiores obcaecati pariatur porro veniam veritatis. Cum debitis, doloribus et incidunt, odio odit optio porro, quia quod rem suscipit.</span><span>Amet anim aspernatur assumenda aut, autem consectetur, decimal ea est eveniet explicabo fugit hic in iste iusto laboriosam magni minima nulla provident quisquam quod recusandae, sint veritatis vero vitae voluptate.</span></p>
+<img src="{% static 'images/Matrix.jpeg' %}" alt="">
+<img src="{% static 'images/Ali.jpeg' %}" alt="">
+<img src="{% static  'images/oppo.jpeg'%}" alt="">
+
+<br><br>
+
+<h1>Payment</h1>
+<p class="paragraph"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci nesciunt numquam quasi. Facilis illo ipsum repudiandae tempore. Asperiores consequatur dicta eaque est eum maxime quis, sequi suscipit velit. Inventore!</span><span>Consectetur consequatur culpa inventore iste, nisi quis reiciendis. Asperiores consectetur debitis doloribus ducimus ea, eaque facilis fuga harum ipsa labore libero magnam molestiae nam non perspiciatis porro recusandae velit voluptas!</span></p>
+<img id="image" src="{% static 'images/oppo.jpeg' %}" alt="">
+</body>
+</html>
